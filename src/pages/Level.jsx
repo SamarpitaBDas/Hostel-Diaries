@@ -9,8 +9,45 @@ import lvl_5 from '../assets/levels/lvl_5.png';
 import lvl_6 from '../assets/levels/lvl_6.png';
 import lvl_7 from '../assets/levels/lvl_7.png';
 import lvl_8 from '../assets/levels/lvl_8.png';
+import { useNavigate } from 'react-router-dom'
 
 const Level = () => {
+
+    const navigate = useNavigate();
+
+    const handleLevel1Click = () => {
+        navigate('/level_1');
+    };
+
+    const handleLevel2Click = () => {
+        navigate('/level_2');
+    };
+
+    const handleLevel3Click = () => {
+        navigate('/level_3');
+    };
+
+    const handleLevel4Click = () => {
+        navigate('/level_4');
+    };
+
+    const handleLevel5Click = () => {
+        navigate('/level_5');
+    };
+
+    const handleLevel6Click = () => {
+        navigate('/level_6');
+    };
+
+    const handleLevel7Click = () => {
+        navigate('/level_7');
+    };
+
+    const handleLevel8Click = () => {
+        navigate('/level_8');
+    };
+
+
     const scrollContainerRef = useRef(null);
     const scrollRight = () => {
         if (scrollContainerRef.current) {
@@ -78,6 +115,7 @@ const Level = () => {
                             cursor: 'pointer',
                             transition: 'transform 0.3s ease',
                         }}
+                        onClick={handleLevel1Click}
                         onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                         onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                     />
@@ -92,6 +130,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel2Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
@@ -104,6 +143,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel3Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
@@ -116,6 +156,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel4Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
@@ -128,6 +169,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel5Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
@@ -140,6 +182,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel6Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
@@ -152,6 +195,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel7Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
@@ -164,6 +208,7 @@ const Level = () => {
                         cursor: 'pointer',
                         transition: 'transform 0.3s ease',
                     }}
+                    onClick={handleLevel8Click}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />

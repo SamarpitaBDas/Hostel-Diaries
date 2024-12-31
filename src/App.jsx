@@ -16,14 +16,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/level" element={<Level />} />
-        <Route path='/kettle' element={<Level_1/>} />
-        <Route path='/kettle' element={<Level_2/>} />
-        <Route path='/kettle' element={<Level_3/>} />
-        <Route path='/kettle' element={<Level_4/>} />
-        <Route path='/kettle' element={<Level_5/>} />
-        <Route path='/kettle' element={<Level_6/>} />
-        <Route path='/kettle' element={<Level_7/>} />
-        <Route path='/kettle' element={<Level_8/>} />
+        <Route path='/level_1' element={<Level_1/>} />
+        <Route path='/level_2' element={<Level_2/>} />
+        <Route path='/level_3' element={<Level_3/>} />
+        <Route path='/level_4' element={<Level_4/>} />
+        <Route path='/level_5' element={<Level_5/>} />
+        <Route path='/level_6' element={<Level_6/>} />
+        <Route path='/level_7' element={<Level_7/>} />
+        <Route path='/level_8' element={<Level_8/>} />
       </Routes>
     </Router>
   );
