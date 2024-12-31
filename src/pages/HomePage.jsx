@@ -41,6 +41,7 @@ const HomePage = () => {
             <div style={{ marginTop: '470px' }}>
                 <Play onClick={handlePlayClick}  />
             </div>
+
         </div>
     );
 };
