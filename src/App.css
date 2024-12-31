@@ -1,0 +1,21 @@
+#root {
+  height: 100vh;
+  width:100%;
+
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'ITCBenguiat';
+
+  src: url('fonts/BenguiatStd-Book.woff2') format('woff2'),
+       url('fonts/BenguiatStd-Book.woff') format('woff'),
+       url('fonts/BenguiatStd-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ITCBenguiat', sans-serif;
+}
+
