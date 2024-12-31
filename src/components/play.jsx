@@ -1,14 +1,19 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const Button = () => {
+const Button = ({ onClick }) => {
   return (
     <StyledWrapper>
-      <button>
+      <button onClick={onClick}>
         PLAY
       </button>
     </StyledWrapper>
   );
 }
+
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,  
+};
 
 const StyledWrapper = styled.div`
   button {

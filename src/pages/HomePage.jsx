@@ -1,8 +1,16 @@
 import Play from '../components/play';
 import backgroundImage from '../assets/starting_screen.jpg';
+import { useNavigate } from 'react-router-dom';
 import './styles.css'; 
 
 const HomePage = () => {
+
+    const navigate = useNavigate(); 
+
+    const handlePlayClick = () => {
+        navigate('/level');  
+    };
+
     return (
         <div 
             style={{
@@ -31,7 +39,7 @@ const HomePage = () => {
                 HOSTEL <br/>DIARIES
             </header>
             <div style={{ marginTop: '470px' }}>
-                <Play />
+                <Play onClick={handlePlayClick}  />
             </div>
         </div>
     );

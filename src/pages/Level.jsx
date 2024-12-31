@@ -15,12 +15,13 @@ const Level = () => {
                 alignItems: 'center',
                 flexDirection: 'column',
                 textAlign: 'center',
-                position: 'relative', 
+                position: 'relative',
+                filter: 'blur(10px)',  
             }}
         >
+            {}
         </div>
     );
 };
 
 export default Level;
-
